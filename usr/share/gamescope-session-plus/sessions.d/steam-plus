@@ -1,0 +1,6 @@
+#!/bin/bash
+
+STEAM_SESSION_FILE=/usr/share/gamescope-session-plus/sessions.d/steam
+[[ -f "${STEAM_SESSION_FILE}" ]] && . "${STEAM_SESSION_FILE}"
+
+CLIENTCMD="opengamepadui --overlay-mode -- $CLIENTCMD"
